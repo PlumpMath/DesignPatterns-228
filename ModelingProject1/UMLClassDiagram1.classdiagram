@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="bdcedea1-68ac-4dca-8af6-cc0ee5e61c53" name="UMLClassDiagram1" linkedPackageId="35d6dfd7-981c-4713-a955-6d20ab3db5be" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d1c4883a-36e8-452f-acff-787e51fc502b" name="MallardDuck" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bd3a75b3-ba86-45ec-a776-7daddd556a8a" />
+        <suppliersInternal>
+          <interfaceRealization Id="42e7c297-ef98-4850-9535-ad2b0c550c4d">
+            <interfaceMoniker Id="19ca977d-d4b2-4bf9-b4b2-b4bb3191fbd5" LastKnownName="Quackable" />
+            <elementDefinition Id="482fccc7-a55e-4b24-a992-14269519d065" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="5e44a353-3f7f-44d8-95fd-abcd0da6fb17" name="Quack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b33435c1-9786-4969-bb0d-b0c33c84adc3" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cf23f0c6-4437-4466-9d09-c6ea6ca7cfd3" name="DuckCall" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5cb8d329-30f8-4a97-9e42-2c33de39e899" />
+        <suppliersInternal>
+          <interfaceRealization Id="66f2f0d7-f1b2-407f-9dec-99aaf546da52">
+            <interfaceMoniker Id="19ca977d-d4b2-4bf9-b4b2-b4bb3191fbd5" LastKnownName="Quackable" />
+            <elementDefinition Id="fd71f14c-9c44-421a-9a21-03e4ad7a5cb0" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="4e46bb4e-d37d-418e-9d90-c8661de15b86" name="Quack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8ff38fa1-ab77-436a-ade5-eabdf027e8b4" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="29fe393a-0e8c-4069-b102-6038cca7dea2" name="RedHeadDuck" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c9f3b700-1e5b-4040-ab6b-0bc1dc27c38a" />
+        <suppliersInternal>
+          <interfaceRealization Id="12e9748a-3bc5-4887-bcb6-5106c2f4efdf">
+            <interfaceMoniker Id="19ca977d-d4b2-4bf9-b4b2-b4bb3191fbd5" LastKnownName="Quackable" />
+            <elementDefinition Id="03f57d9c-9c8c-41db-9658-3c7d15d2f6bf" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="7a4a51d7-cf17-429c-8f72-1e32a7e0ec26" name="Quack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c33b326d-6b73-4d63-8124-a1037a865326" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c381f63f-722e-4788-84e9-21339b30000c" name="RubberDuck" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="61e60fc7-0ee2-4397-8b68-31270181baa2" />
+        <suppliersInternal>
+          <interfaceRealization Id="2fe61d88-506c-4ba0-bc36-3e1cae7bec2f">
+            <interfaceMoniker Id="19ca977d-d4b2-4bf9-b4b2-b4bb3191fbd5" LastKnownName="Quackable" />
+            <elementDefinition Id="ff50caad-13f5-4678-9db3-0cdcd04d5b95" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="ee44e4b4-62ab-4f84-b801-e2c03be8a4c0" name="Quack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a6765f59-55d0-474d-8505-16dc49686d76" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="19ca977d-d4b2-4bf9-b4b2-b4bb3191fbd5" name="Quackable" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="60935db8-c1a5-4302-ac08-cf59f8ff5cc2" />
+        <ownedOperations>
+          <operation Id="755d668c-20bf-4623-82dd-6be03ee39e57" name="Quack" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c7c5a5fe-30a1-4894-8afe-6dff59404dbf" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6e683db3-6063-413d-be23-5b13f391dddd" name="Geese" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="856abf7b-a57b-4c47-b8dc-9ba67119e27a" />
+        <ownedOperationsInternal>
+          <operation Id="a6d6cf97-b28f-404d-b84e-88caf556ec4e" name="Honk" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8f7f6177-53b4-498f-9b3c-968333e3d8f2" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="791ec58c-74a1-40d8-9484-5b3764078437" name="GeeseAdapter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="caa445ca-0bf9-4d35-bce1-15a3bbb6ab3c" />
+        <suppliersInternal>
+          <interfaceRealization Id="69928a1a-d10b-4f48-a6b8-cbb4d9e46f6a">
+            <interfaceMoniker Id="19ca977d-d4b2-4bf9-b4b2-b4bb3191fbd5" LastKnownName="Quackable" />
+            <elementDefinition Id="43edc120-bcbe-4f0d-9ad0-5d58a95e2544" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="779b112b-c936-4276-9189-9884e3fed50c" isDerived="false" sourceEndRoleName="GeeseAdapter" targetEndRoleName="Geese" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6e683db3-6063-413d-be23-5b13f391dddd" LastKnownName="Geese" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="185bdd93-5c02-4ddf-a403-ea9355393ce7" name="GeeseAdapter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="54435200-7296-4481-8f1d-24b288bf67e8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="064bb9e8-898b-45c1-8553-52b8d9b2a455" name="Geese" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aadaf755-11e5-4482-a6e0-38dd1e692a53" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4246c230-3d07-4e2b-9fe9-7cdcb7ddfa1a" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="e6b45159-4cca-47d7-ae9f-b39cd352f974" name="Quack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7c4b97e7-7a15-4348-be66-eca77ae23671" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="35d6dfd7-981c-4713-a955-6d20ab3db5be" name="ModelingProject1">
+    <elementDefinition Id="9fd3997f-b250-4346-99de-d76a421d9dea" />
+    <profileInstances>
+      <packageHasProfileInstances Id="83bce906-91e6-49e8-892f-0470829036bc">
+        <profileInstance Id="ad779346-201d-4549-902a-30fcfe45d03d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ebbed209-3058-4700-89d0-b186de7dfe25">
+        <profileInstance Id="6afba726-1ab4-4078-ad79-c0c702ec4dcd" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

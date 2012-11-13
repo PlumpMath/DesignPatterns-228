@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="55b83229-d6be-477c-a9d7-ab890d97ac82" name="CommandPattern" linkedPackageId="97b1718c-b501-486f-a667-4af1343573e1" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="a3f9c527-d4c0-49fd-ba37-84af652c02cb">
+      <profileInstance Id="e6875dbd-9825-4f9b-961d-e2071bb1062a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9e8c55e7-e099-42ae-8d3c-7a0ab1315cb2">
+      <profileInstance Id="7cd462eb-ee41-4660-9068-15bf3781b02e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6b556e25-5c5b-49fa-9c8d-039f611b0584" name="LightOnCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="da6060ea-2168-4b88-8ab0-e19b08c07455" />
+        <suppliersInternal>
+          <dependency Id="acf1589c-29ce-4443-b9ff-b73577c04081">
+            <interfaceMoniker Id="4c795631-d4b3-4164-8816-c46126c6ec46" LastKnownName="Command" />
+            <elementDefinition Id="0c27b0df-9405-4c0c-b9d7-58759cee627d" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="d2f9815f-d533-48f1-a3f0-b2ac18bfc619" isDerived="false" sourceEndRoleName="LightOnCommand" targetEndRoleName="Light" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d416d4b1-0d73-43f0-8a1b-ed2a5018af06" LastKnownName="Light" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e76a990a-2363-4d95-bde8-0d3784c0b81e" name="LightOnCommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3293e117-783b-4d9f-8661-a8986d7dc91d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="744f4a25-1f77-421d-9c0c-b7ab164ac2ae" name="Light" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="5497453e-3c86-4a1f-8ad4-022a1762dff4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="03c9a1e5-b4b1-400c-9024-3901f3c563f4" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="adb05363-5204-4f0f-bf2f-2aff718727fc" name="Excecute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="10f80894-4254-465b-b43e-55d848b86993" />
+          </operation>
+          <operation Id="1ff95832-11b7-49dd-b54b-f461a108c847" name="Undo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e6eefb43-7866-459f-a971-31092aab3b02" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="4c795631-d4b3-4164-8816-c46126c6ec46" name="Command" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c470581a-b600-4168-bb5e-cea7b65a3811" />
+        <ownedOperations>
+          <operation Id="078dcab2-8051-4f62-8938-88b403fd8761" name="Excecute" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="80e192d4-d4d0-4c34-bda1-f5259d96fe85" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5f475ce8-df29-4886-b89d-9fb091d6a90e" name="LightOffCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="40ff95ef-6804-4b4c-bdd9-fea0fd09f3bd" />
+        <suppliersInternal>
+          <dependency Id="a97a6f89-e8ad-4ec1-a852-cdfbd262cbc6">
+            <interfaceMoniker Id="4c795631-d4b3-4164-8816-c46126c6ec46" LastKnownName="Command" />
+            <elementDefinition Id="6d4109d0-67d4-4024-b5e3-2b70e39b5227" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="0f6d4bea-51da-4bfd-9dd6-af04bbdfed68" isDerived="false" sourceEndRoleName="LightOffCommand" targetEndRoleName="Light" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d416d4b1-0d73-43f0-8a1b-ed2a5018af06" LastKnownName="Light" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="63577d13-1df7-4241-8f20-811416dc6e5d" name="LightOffCommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dc4a2373-2d33-4053-a898-5c69bc423311" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="01b8d0e1-aa80-4fec-97b0-9069a82015f6" name="Light" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="cd895bb8-24d0-4a46-9067-4ce0cf159c61" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="47821018-2d54-4d05-b908-c7fc9b9ea85f" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d416d4b1-0d73-43f0-8a1b-ed2a5018af06" name="Light" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6f14bccc-e41e-469e-b7ae-15c5ff067ee6" />
+        <ownedOperationsInternal>
+          <operation Id="34bbd91a-d906-4ebe-a684-df5058d10d19" name="OnLight" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c661479d-2217-4f38-b207-9fd57ef1cc1a" />
+          </operation>
+          <operation Id="2f8284c0-1e25-4d4e-8d5a-4afc352cecab" name="OffLight" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c7b245a3-8ee1-4566-8a8c-816afc2e2ac8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cacbba6d-3be5-451a-8566-b72ba4d83e77" name="RemoteControl" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="758e08ae-e038-40ae-85a0-80d48b2afa52" />
+        <targetEnds>
+          <association Id="efdd7675-11bc-4bb0-96fd-b20e888c8ddc" isDerived="false" sourceEndRoleName="RemoteControl" targetEndRoleName="Command" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="4c795631-d4b3-4164-8816-c46126c6ec46" LastKnownName="Command" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="576126f2-7b73-4a90-a489-4af49949308a" name="RemoteControl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9f0c349f-9fda-4734-9f19-419a8ccdbdab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f37a8c4d-83ce-479e-b1de-15e87b6bc6ba" name="Command" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="2a5feeec-b187-48bd-9d72-c770414e381c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e0ceabe9-1fef-4f11-b259-754e4e2d1946" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="80fa5395-7a62-4aca-a422-0ac99535b168" name="SetCommand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="771df504-9680-4b87-ac63-84debd644a0f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="97b1718c-b501-486f-a667-4af1343573e1" name="ModelingProject1">
+    <elementDefinition Id="9fd3997f-b250-4346-99de-d76a421d9dea" />
+  </package>
+</logicalClassDesignerModel>

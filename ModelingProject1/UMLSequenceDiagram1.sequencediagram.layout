@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sequenceDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLSequenceDiagram1">
+  <SequenceDesignerModelMoniker Id="7e07642a-f8a6-417c-af63-9f652453eb67" />
+  <nestedChildShapes>
+    <lifelineShape Id="a9876727-7df6-4b6f-9a5e-1d7397f7e5df" absoluteBounds="3.03125, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="1336da07-da84-48fb-b679-2736aaeb7ec8" LastKnownName="View" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="aa76d117-2192-41f3-af8d-f69e97a98d1f" absoluteBounds="2.60625, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="1336da07-da84-48fb-b679-2736aaeb7ec8" LastKnownName="View" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="d2859f78-992d-42c1-9842-86d513a7b7ab" absoluteBounds="3.03125, 1, 0, 7">
+          <lifelineMoniker Id="1336da07-da84-48fb-b679-2736aaeb7ec8" LastKnownName="View" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <lifelineShape Id="b2dd21b0-0c7a-46f6-bbfa-a53d97fbc778" absoluteBounds="4.50000015894572, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="6bae7f32-b4c2-4ffe-ae38-895456b430df" LastKnownName="Controller" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="35ff0cb7-09c2-4cb5-aab5-f933b833bc8d" absoluteBounds="4.07500015894572, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="6bae7f32-b4c2-4ffe-ae38-895456b430df" LastKnownName="Controller" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="cef00e33-770c-464f-bf54-0757d95caae0" absoluteBounds="4.50000015894572, 1, 0, 7">
+          <lifelineMoniker Id="6bae7f32-b4c2-4ffe-ae38-895456b430df" LastKnownName="Controller" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+  </nestedChildShapes>
+</sequenceDesignerDiagram>

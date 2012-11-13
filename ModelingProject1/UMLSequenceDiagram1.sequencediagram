@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="7e07642a-f8a6-417c-af63-9f652453eb67" name="Sequence1" linkedPackageId="2287e927-80bf-431c-9202-4a2d5b970380" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="339fdd58-a0c1-4c0d-8f60-a8e48248c10a">
+      <profileInstance Id="6b951698-5b99-45c2-afe6-eb7d27f7e295" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="73cf21be-954e-41dd-b7ff-e0bd16a58f71">
+      <profileInstance Id="8fc8d7cf-2837-43d5-9bfc-664db2c8dfc1" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="533a9718-4518-41c0-9e73-dfc36eac284d" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="0742eafa-6ce6-46be-ad35-35919a240755" />
+        <lifelines>
+          <lifeline Id="1336da07-da84-48fb-b679-2736aaeb7ec8" name="View" isActor="false" lifelineDisplayName="View">
+            <elementDefinition Id="69c1efd6-7d0b-4e58-a243-4239074c4460" />
+          </lifeline>
+          <lifeline Id="6bae7f32-b4c2-4ffe-ae38-895456b430df" name="Controller" isActor="false" lifelineDisplayName="Controller">
+            <elementDefinition Id="056fa7a7-d374-49aa-bf1a-5ed0cbb9a98d" />
+            <represents>
+              <propertyMoniker Id="842b35ce-329d-49b8-8647-458b10d33971" />
+            </represents>
+          </lifeline>
+        </lifelines>
+        <ownedAttributesInternal>
+          <property Id="842b35ce-329d-49b8-8647-458b10d33971" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1304ae0d-850e-48a2-b9a3-febf09191077" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2b31c35d-88cc-43f7-8198-9e7bbc21a6ad" LastKnownName="Controller" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2b31c35d-88cc-43f7-8198-9e7bbc21a6ad" name="Controller" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Controller">
+        <elementDefinition Id="476432f5-18f9-4bd1-a31e-b7bef4d79de4" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="2287e927-80bf-431c-9202-4a2d5b970380" name="ModelingProject1">
+    <elementDefinition Id="9fd3997f-b250-4346-99de-d76a421d9dea" />
+  </package>
+</SequenceDesignerModel>
