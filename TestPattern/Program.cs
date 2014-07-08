@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
 namespace TestPattern
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public interface FirstInterface
     {
         void Method1();
@@ -44,6 +48,9 @@ namespace TestPattern
         #endregion
     }
 
+    /// <summary>
+    /// Test Multiple inheritance
+    /// </summary>
     class Program
     {
 
